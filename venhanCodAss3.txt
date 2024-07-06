@@ -1,0 +1,25 @@
+1. Can we create multiple one-crore objects in one class?
+
+    Ans:-  Yes, Creating 1 crore objects for a class in Python is technically possible.
+            but each object has memory, and creating such a large number of objects can lead to high memory usage and slow down the program. 
+
+
+2. One class has two objects, and their two objects have one common method called the promote method. can we access the date of one object of the promote 
+   method data in another object of the promote method?
+
+   Ans :- 
+ 
+          class Employee:
+     		def __init__(s, data):
+       		     s.data = data
+
+    		def promote(s, other_obj):
+               	    print(other_obj.data)
+
+  	 obj1 = Employee("Object 1 Data")
+	 obj2 = Employee("Object 2 Data")
+
+	obj1.promote(obj2)
+
+  NOTE: In Python, each object of a class maintains its own state and data. However, it is possible to access data from one object within the method of 
+        another object under certain conditions.
